@@ -1,0 +1,46 @@
+.header-dream {
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    padding: 25px;
+    font-weight: 600;
+    justify-content: space-between;
+    &__position {
+        display: flex;
+    }
+    &__svg {
+        margin: 0 30px 0 50px;
+    }
+    &__ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 0;
+    }
+    &__li {
+        color: #585858;
+        text-decoration: none;
+        display: block;
+        margin: 5px 25px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: currentColor;
+            transform: scale(0);
+            transform-origin: left right;
+            transition: all .3s ease-in-out;
+        }
+        &:hover::after {
+            transform: scale(1);
+            transform-origin: right left;
+        }
+    }
+}
