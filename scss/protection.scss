@@ -21,6 +21,9 @@
     }
     &__about {
         margin-left: 120px;
+        @media screen and (max-width: 1200px) {
+            margin-left: 80px;
+        }
     }
     &__item {
         display: flex;

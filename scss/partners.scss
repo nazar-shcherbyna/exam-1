@@ -2,11 +2,22 @@
     &__h2 {
         font-size: 4.8rem;
         margin: 60px 0 20px;
+        @media screen and (max-width: 992px) {
+            margin: 30px 0 20px;
+        }
     }
     &__logos {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 20px 0 60px;
+        @media screen and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__logo {
+        @media screen and (max-width: 1200px) {
+            padding: 0 10px;
+        }
     }
 }

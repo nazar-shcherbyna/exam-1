@@ -8,6 +8,10 @@
         letter-spacing: -2px;
         line-height: .8;
         margin: 10px 0 40px 0;
+        @media screen and (max-width: 1200px) {
+            font-size: 9rem;
+            margin: 40px 0;
+        }
         span {
             color: #FD665E;
         }
@@ -19,6 +23,9 @@
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 1.5;
+        @media screen and (max-width: 1200px) {
+            padding-right: 20px;
+        }
     }
     &__img {
         width: 70%;
