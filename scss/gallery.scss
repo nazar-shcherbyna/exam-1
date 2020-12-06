@@ -1,11 +1,15 @@
 .gallery {
     min-height: 100vh;
+    &__container{
+        display: flex;
+        align-items: flex-end;
+        padding: 40px 0 20px;
+    }
     &__h2 {
         font-size: 4.8rem;
         color: #000;
-        margin: 0 auto;
-        padding: 40px 0 40px;
-        max-width: 30%;
+        margin: 20px auto;
+        max-width: 50%;
     }
     &__images {
         width: 100%;

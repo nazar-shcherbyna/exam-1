@@ -1,32 +1,23 @@
-.header-dream {
-    min-height: 100vh;
-}
-.header {
-    display: flex;
-    align-items: center;
-    padding: 25px;
-    font-weight: 600;
-    justify-content: space-between;
-    &__position {
+.build {
+    border-top: 1px solid #F0F0F0;
+    &__pos {
         display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
         align-items: center;
-    }
-    &__svg {
-        margin: 0 30px 0 50px;
     }
     &__ul {
         list-style: none;
         display: flex;
-        text-align: center;
-        font-size: 1.4rem;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
-    &__li {
-        color: #585858;
+    &__link {
         text-decoration: none;
-        display: block;
-        margin: 5px 25px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #585858;
+        margin-right: 50px;
         position: relative;
         &::after {
             content: '';
@@ -45,12 +36,4 @@
             transform-origin: right left;
         }
     }
-    &__input {
-        margin: 0 20px;
-    }
-}
-.fas {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #585858;
 }

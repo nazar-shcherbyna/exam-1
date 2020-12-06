@@ -1,0 +1,28 @@
+.house {
+    min-height: 100vh;
+    padding: 20px 0;
+    &__pos {
+        display: flex;
+    }
+    &__img {
+        width: 50%;
+        height: 90vh;
+        overflow: hidden;   
+    }
+    &__img--pos {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__element {
+        margin: 200px 0 0 100px;
+    }
+    &__h2 {
+        font-weight: 700;
+        font-size: 4.8rem;
+        max-width: 100%;
+    }
+    &__h2--span {
+        color: #FD665E;
+    }
+}
