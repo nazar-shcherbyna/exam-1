@@ -1,0 +1,132 @@
+@import 'mixins';
+
+@media screen and (max-width: 968px) {
+    .navi{
+        position: fixed;
+        background-color: rgb(233, 255, 231);
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-50%, -200%);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        transition: all .3s ease-in-out;
+        &__items{
+            padding: 30px;
+            list-style: none;
+        }
+        &__item{
+            text-align: center;
+        }
+        &__item a{
+            color: rgb(116, 116, 116);
+            text-decoration: none;
+            @include hover{
+                color: #ff6033;
+            }
+        }
+        &__items {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+        &__item {
+            margin: 50px 15px;
+            text-decoration: none;
+            color: #262626;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            transition: all .5s ease;
+            position: relative;
+            display: block;
+        }
+        &__item::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transition: transform 0.3s;
+            transform-origin: right center;
+            color: #000;
+        }
+        &__item:hover::after {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+        @media screen and (max-width: 576px){
+            .navi{
+                font-size: 4rem;
+            }
+        }
+    }
+    #toggler, #toggler-input{
+        display: none;
+    }
+    #toggler{
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 32px;
+        height: 32px;
+        z-index: 11;
+    }
+    #toggler-input:checked ~ #toggler{
+        position: fixed;
+    }
+    #toggler-input:checked ~ nav{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    #toggler span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        padding: 2px;
+        border-radius: 2px;
+        background-color: #fff;
+        box-shadow: 0 0 3px #00000080;
+        position: absolute;
+        left: 15%;
+        transform: translate(-20%, 0);
+        transition: all .3s ease-in-out;
+    }
+    #toggler span:nth-child(1){
+        top: 0;
+    }
+    #toggler span:nth-child(2){
+        top: 50%;
+    }
+    #toggler span:nth-child(3){
+        top: 100%;
+    }
+    #toggler-input:checked ~ #toggler span:nth-child(1){
+        transform: translate(-20%, 16px) rotate(45deg); 
+        background-color: #000;
+        box-shadow: none;
+    }
+    #toggler-input:checked ~ #toggler span:nth-child(2){
+        opacity: 0;
+    }
+    #toggler-input:checked ~ #toggler span:nth-child(3){
+        transform: translate(-20%, -16px) rotate(-45deg); 
+        background-color: #000;
+        box-shadow: none;
+    }    
+}
+
+#toggler-input {
+    display: none;
+}
+

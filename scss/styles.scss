@@ -10,10 +10,12 @@
 @import 'slider.scss';
 @import 'house.scss';
 @import 'partners.scss';
-@import 'build.scss';
+@import 'footer.scss';
+@import 'navi.scss';
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {

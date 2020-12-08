@@ -11,6 +11,10 @@
     margin: 0 10px;
     border-radius: 4px;
     cursor: pointer;
+    @media screen and (max-width: 992px) {
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
     @include hover {
         color: #585858;
         background-color: #fff;
@@ -26,12 +30,19 @@
 .button__dream {
     padding: 15px 35px;
     margin: 30px 0;
+    @media screen and (max-width: 992px) {
+        margin: 30px;
+    }
 }
 
 .button__protection {
     text-transform: uppercase;
     padding: 15px 35px;
     margin: 30px 30px 0 100px;
+    @media screen and (max-width: 768px){
+        margin: 30px auto;
+        display: flex;
+    }
 }
 
 .button__house {

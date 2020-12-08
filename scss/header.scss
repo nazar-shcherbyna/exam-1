@@ -1,5 +1,5 @@
 .header-dream {
-    min-height: 100vh;
+    height: 100vh;
 }
 .header {
     display: flex;
@@ -16,6 +16,9 @@
     }
     &__svg {
         margin: 0 30px 0 50px;
+        @media screen and (max-width: 968px) {
+            margin: 0 15px 0 50px;
+        }
     }
     &__ul {
         list-style: none;
@@ -24,6 +27,12 @@
         font-size: 1.4rem;
         padding: 0;
         margin: 0;
+        @media screen and (max-width: 992px) {
+            font-size: 1.2rem;
+        }    
+        @media screen and (max-width: 968px) {
+            display: none;
+        }
     }
     &__li {
         color: #585858;
@@ -59,4 +68,7 @@
     font-size: 1.5rem;
     text-align: center;
     color: #585858;
+    @media screen and (max-width: 992px) {
+        font-size: 1.2rem;
+    }
 }
