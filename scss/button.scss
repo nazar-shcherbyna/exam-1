@@ -33,6 +33,10 @@
     @media screen and (max-width: 992px) {
         margin: 30px;
     }
+    @media screen and (max-width: 768px) {
+        margin: 15px auto 15px;
+        display: flex;
+    }
 }
 
 .button__protection {
@@ -42,6 +46,9 @@
     @media screen and (max-width: 768px){
         margin: 30px auto;
         display: flex;
+    }
+    @media screen and (max-width: 768px){
+        margin: 10px auto;
     }
 }
 

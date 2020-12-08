@@ -3,6 +3,9 @@
     @media screen and (max-width: 1200px) {
         min-height: 70vh;
     }
+    @media screen and (max-width: 768px) {
+        min-height: 20vh;
+    }
     &__container{
         display: flex;
         align-items: flex-end;
@@ -13,6 +16,11 @@
         color: #000;
         margin: 20px auto;
         max-width: 50%;
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+            text-align: center;
+            font-size: 3.2rem;
+        }
     }
     &__images {
         width: 100%;
@@ -21,9 +29,13 @@
     }
     &__img {
         display: block;
-        width: calc(25% - 20px * 2);
+        width: calc(25% - 10px * 2);
         height: 100%;
         object-fit: cover;
-        margin: 0 20px;
+        margin: 0 10px;
+        @media screen and (max-width: 768px) {
+            margin: 0 5px;
+            width: calc(25% - 5px * 2);
+        }
     }
 }
