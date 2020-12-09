@@ -8,6 +8,9 @@
         @media screen and (max-width: 992px) {
             padding: 30px 20px;
         }
+        @media screen and (max-width: 576px) {
+            padding: 10px 8px;    
+        }
     }
     &__ul {
         list-style: none;
@@ -22,6 +25,10 @@
         color: #585858;
         margin-right: 50px;
         position: relative;
+        @media screen and (max-width: 576px) {
+            font-size: 1rem;  
+            margin-right: 20px;  
+        }
         &::after {
             content: '';
             position: absolute;

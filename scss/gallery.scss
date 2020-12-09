@@ -21,6 +21,9 @@
             text-align: center;
             font-size: 3.2rem;
         }
+        @media screen and (max-width: 576px) {
+            font-size: 2.5rem;    
+        }
     }
     &__images {
         width: 100%;
