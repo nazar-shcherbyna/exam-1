@@ -46,6 +46,9 @@
             transition: all .5s ease;
             position: relative;
             display: block;
+            @media screen and (orientation: landscape) {
+                margin: 25px 10px;
+            }
         }
         &__item::after {
             content: '';

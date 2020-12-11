@@ -1,16 +1,11 @@
 .dream {
     &__sections {
         display: flex;
-        height: 400px;
-        @media screen and (max-width: 992px) {
-            height: 500px;
-        }
         @media screen and (max-width: 768px) {
             display: block;
         }
         @media screen and (max-width: 576px) {
-            height: 400px;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
         }
     }
     &__h1 {
